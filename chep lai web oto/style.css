@@ -1,0 +1,324 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+img{
+    width: 100%;
+}
+header{
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+}
+header>div{
+    float: left;
+}
+header>div>img{
+    height: 150px;
+    width: 150px;
+}
+header>h1{
+    color: blue;
+    text-transform: uppercase;
+    float: right;
+    text-shadow: 2px 3px 3px gold;
+    margin-top: 50px;
+
+    font-size: 3vw;
+    margin-right: 30px;
+    animation: doimauchu ease 2s infinite;
+}
+@keyframes doimauchu{
+    from{color: darkblue;}
+    to{color: red;}
+}
+/* section */
+section.menu{
+    background-color:tomato;
+}
+
+section.menu>ul{
+    display: flex;
+}
+
+section.menu>ul>li{
+    list-style-type: none;
+    border-right: 2px solid blue;
+}
+
+section.menu >ul>li:nth-child(5){
+    margin-left: auto;
+}
+
+section.menu > ul > li:nth-child(4){
+    border-right: none
+}
+
+section.menu >ul>li>a{
+    text-decoration: none;
+    display: block;
+    min-width: 120px;
+    text-align: center;
+    padding: 15px;
+
+    font-weight: bold;
+}
+
+section.menu >ul>li>a:hover{
+    background-color: darkblue;
+    color: white;
+}
+section.baner>img {
+    height: 400px;
+}
+
+section.sub-menu {
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 20px;
+}
+
+section.sub_menu > ul{
+    display: flex;
+    font-size: 25px;
+    font-weight: bold;
+    justify-content: space-around;
+}
+
+section.sub_menu > ul > li {
+    list-style-type: none; 
+}
+section.sub_menu >ul>li>a{
+    text-decoration: none;
+    color: darkblue;
+}
+
+section.sub_menu>ul>li>a:hover{
+    color: red;
+}
+
+.cacsanpham{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 20px;
+
+    height: 600px;
+    overflow: auto;
+}
+.sanpham {
+    width: 32%;
+    border: 2px solid rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    padding: 15px;
+    margin: 5px;
+
+    box-shadow: 2px 3px 2px black;  
+}
+.sanpham>h2{
+    text-align: center;
+    color: brown;
+    margin-bottom: 10px;
+}
+
+.sanpham >h3{
+    text-align: center;
+    color: darkblue;
+    font-size: 16px;
+}
+
+.sanpham>p{
+    text-align: center;
+     text-indent: 20px; /* thụt dòng đầu tiên của đoạn văn */
+}
+
+.sanpham >img{
+    height: 200px;
+    transition:transform ease 1s;
+}
+
+.sanpham img:hover{
+    transform: skew(-10deg); 
+/* transform: scale(0.7); */
+}
+
+.dichvutong{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+h2{
+    color: brown;
+}
+
+hr{
+    border: 2px solid turquoise;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    background-color: turquoise;
+}
+
+.cacdichvu{
+    display: flex;
+}
+
+.dichvu{
+    width: 23%;
+    padding: 10px;
+    margin: 10px;
+}
+
+.dichvu>div{
+    text-align: center;
+}
+
+.dichvu>div>img{
+    height: 100px;
+    width: 100px;
+}
+
+.dichvu>p{
+    text-align: justify;
+}
+
+.lienhe{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+}
+
+.lienhe>.traodoivoichugtoi{
+    padding: 20px;
+    width: 50%;
+}
+
+.lienhe>.traodoivoichugtoi>form>div>input[type=text],
+.lienhe>.traodoivoichugtoi>form>div>input[type=tel]{
+    width: 49.5%;
+}
+
+input[type=text],
+input[type=tel],
+input[type=email]{
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+textarea{
+    width: 100%;
+    background-color: lightgray;
+    border: none;
+    padding: 10px;
+    margin-top: 5px;
+
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+input[type=submit]{
+    min-width: 120px;
+    background-color: darkred;
+    border: none;
+    padding: 12px;
+    border-radius: 7px;
+
+    cursor: pointer;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+input[type=submit]:hover{
+    background-color: black;
+    color: wheat;
+}
+
+footer{
+    background-color: black;
+    color: white;
+}
+
+footer>table{
+    width: 80%;
+    margin: 0 auto;
+}
+
+footer>table>tbody>tr:first-child{
+    height: 50px;
+    font-weight: bold;
+}
+
+.thongtin{
+    width: 80%;
+    margin-top: 1000px;
+    margin: 0 auto;
+    display: flex;
+}
+
+.thongtin>h5{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.thongtin>p{
+    margin-top: 5px;
+}
+
+.thongtin img{
+    width: 200px;
+}
+
+.col1{
+    width: 40%;
+}
+.col2{
+    width: 40%;
+}
+
+.col2 input[type=text],
+.col2 input[type=email]{
+    background-color: #1c1c1c;
+}
+
+.col3{
+    margin-left:2%;
+    width: 20%;
+}
+
+.foot{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 20px;
+
+    margin-top: 20px;
+}
+
+.foot a{
+    text-decoration: none;
+    color: white;
+}
+
+.dautrang > a{
+    display: block;
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0).4;
+    width: 120px;
+    position: fixed;
+
+    right: 5px;
+    border-top: 5px;
+    border-radius: 5px;
+    text-align: center;
+    text-decoration: none;
+}
+
